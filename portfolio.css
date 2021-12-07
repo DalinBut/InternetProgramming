@@ -1,0 +1,128 @@
+.home {
+    position: relative;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.sidebar {
+    margin: 0px;
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    padding-top: 0px;
+    border-right: 20px solid gray;
+}
+.web {
+    color: #000;
+    opacity: 0.5;
+}
+.sidebar .profile {
+    width: 100px;
+    border-radius: 100%;
+    border: 2px solid gray;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+.sidebar .active {
+    background-color: #f5f3f3;
+    border-top: 1px solid #dbdbdb;
+    border-right: 5px solid #f4c052;
+}
+.sidebar li {
+    border-bottom: 1px solid #dbdbdb;
+    padding: 20px;
+    
+}
+.sidebar li a {
+    text-decoration: none;
+    color: #000;
+}
+.portfolio {
+    /* display: flex; */
+    position: relative;
+    margin-left: 21.55%;
+    width: 78.45%;
+    height: 100%;
+}
+.title {
+    background-color: orange;
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    margin-left: -1%;
+    margin-top: 50px;
+}
+.title h2 {
+    text-align: right;
+    margin-top: 10px;
+    padding-right: 35px;
+    color: #fff;
+}
+#triangle-topright {
+    width: 0;
+    height: 0;
+    border-top: 10px solid orange;
+    border-left: 10px solid transparent;
+    margin-left: -1%;
+    margin-top: 100px;
+    position: absolute;
+}
+.skill {
+    position: relative;
+    left: 300px;
+    top: 65px;
+    width: max-content;
+}
+.grid-container {
+    padding: 10px; 
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
+
+.grid-container .grid-item img {
+    width: 200px; 
+    text-align: center;
+}
+@media only screen and (max-width: 800px){
+    .about_me {
+        display: none;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top: 50px;
+    }
+    .grid-item {
+        padding: 10px;
+        text-align: center;
+    }
+    .grid-item img {
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 560px){
+    
+    .sidebar .profile {
+        width: 50px;
+        border-radius: 100%;
+        border: 1px solid gray;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 10px;
+        margin-top: 50px;
+    }
+    .grid-item {
+        padding: 10px;
+        text-align: center;
+    }
+    .grid-item img {
+        width: 250px;
+    }
+}
