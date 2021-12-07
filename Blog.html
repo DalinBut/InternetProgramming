@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- <link rel="stylesheet" href="main.css" type="text/css"> -->
+    <style>
+        .home {
+            position: relative;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+        .sidebar {
+            margin: 0px;
+            position: fixed;
+            width: 20%;
+            height: 100vh;
+            padding-top: 0px;
+            border-right: 20px solid gray;
+        }
+        .web {
+            color: #000;
+            opacity: 0.5;
+        }
+        .sidebar .profile {
+            width: 100px;
+            border-radius: 100%;
+            border: 2px solid gray;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            
+        }
+        .sidebar .active {
+            background-color: #f5f3f3;
+            border-top: 1px solid #dbdbdb;
+            border-right: 5px solid #f4c052;
+        }
+        .sidebar li {
+            border-bottom: 1px solid #dbdbdb;
+            padding: 20px;
+            
+        }
+        .sidebar li a {
+            text-decoration: none;
+            color: #000;
+        }
+        .portfolio {
+            /* display: flex; */
+            position: relative;
+            margin-left: 21.55%;
+            width: 78.45%;
+            height: 100%;
+        }
+        .title {
+            background-color: orange;
+            width: 250px;
+            height: 50px;
+            position: absolute;
+            margin-left: -1%;
+            margin-top: 50px;
+        }
+        .title h2 {
+            text-align: right;
+            margin-top: 10px;
+            padding-right: 35px;
+            color: #fff;
+        }
+        #triangle-topright {
+            width: 0;
+            height: 0;
+            border-top: 10px solid orange;
+            border-left: 10px solid transparent;
+            margin-left: -1%;
+            margin-top: 100px;
+            position: absolute;
+        }
+        .skill {
+            position: relative;
+            left: 300px;
+            top: 65px;
+            width: max-content;
+        }
+        .grid-container {
+            padding: 10px; 
+            margin-top: 150px;
+            display: grid;
+            grid-template-columns: auto auto;
+            text-align: center;
+        }
+        .grid-item {
+            border: 1px solid gray;
+            margin: 20px;
+        }
+        .grid-container .grid-item img {
+            width: 350px; 
+            height: 175px;
+            text-align: center;
+        }
+        .grid-item .note {
+            position: relative;
+            background-color: orange;
+            margin-top: -30px;
+            height: 50px;
+            width: 50px;
+            left: 70%;
+        } 
+        .grid-item p {
+                opacity: 0.5;
+        }
+        @media only screen and (max-width: 950px){
+            .about_me {
+                display: none;
+            }
+            .sidebar .profile {
+                width: 50px;
+                border-radius: 100%;
+                border: 1px solid gray;
+            }
+            .grid-container {
+            padding: 10px; 
+            margin-top: 0px;
+            display: grid;
+            grid-template-columns: auto;
+            text-align: center;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="home">
+        <div class="sidebar">
+            
+            <center>
+                <img class="profile" src="./assets/my_photo.png" alt="">
+                <h2>But Dalin</h2>
+                <h3 class="web">Web designer</h3>
+                <ul>
+                    <li style="border-top: 1px solid #dbdbdb;">
+                        <a href="Home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About me</a>
+                    </li>
+                    <li>
+                        <a href="#resume">Resume</a>
+                    </li>
+                    <li>
+                        <a href="Portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="active">
+                        <a href="#blog">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </center>            
+        </div>
+
+        <div class="portfolio">
+            <div class="about_me">
+                <div class="title">
+                    <h2>Blog</h2>
+                </div>
+                <div id="triangle-topright"></div>
+                <div class="skill">
+                    <h3>My Dairy</h3>
+                </div>  
+            </div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="./assets/blog_post_1.jpg">
+                    <h4 class="note">6<br> Dec</h4>
+                    <p>Travel</p>
+                    <h4>Bootstrap is the Most Popular Framework</h4>
+                </div>
+                <div class="grid-item">
+                    <img src="./assets/blog_post_2.jpg">
+                    <h4 class="note">6 <br> Dec</h4>
+                    <p>iQuery</p>
+                    <h4>One Framework, Every Device</h4>
+                </div>
+                <div class="grid-item">
+                    <img src="./assets/blog_post_3.jpg">
+                    <h4 class="note">6<br> Dec</h4>
+                    <p>Sport</p>
+                    <h4>Designed for Everyone, Everywhere</h4>
+                </div>
+                <div class="grid-item">
+                    <img src="./assets/blog_post_4.jpg">
+                    <h4 class="note">6<br> Dec</h4>
+                    <p>CSS</p>
+                    <h4>An Introduction To PostCSS</h4>
+                </div>
+                <div class="grid-item">
+                    <img src="./assets/blog_post_5.jpg">
+                    <h4 class="note">6<br> Dec</h4>
+                    <p>CSS3</p>
+                    <h4>Original and Innovative Web Layouts</h4>
+                </div>
+                <div class="grid-item">
+                    <img src="./assets/blog_post_6.jpg">
+                    <h4 class="note">6<br> Dec</h4>
+                    <p>HTML5</p>
+                    <h4>Creative and Innovative Navigation Designs</h4>
+                </div>
+                <div class="grid-item">
+                    <img src="./assets/blog_post_7.jpg">
+                    <h4 class="note">6<br> Dec</h4>
+                    <p>Design</p>
+                    <h4>Navigation for Mega-Site</h4>
+                </div>
+                <div class="grid-item">
+                    <img src="./assets/blog_post_8.jpg">
+                    <h4 class="note">6 <br> Dec</h4>
+                    <p>CSS3</p>
+                    <h4>Front_End Challenge Accepted</h4>
+                </div>
+                  
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

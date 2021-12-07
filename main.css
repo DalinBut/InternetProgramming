@@ -5,11 +5,9 @@
 .home {
     position: relative;
     height: 100%;
-    /* width: 100%; */  
+    
 }
 .sidebar {
-    /* float: left; */
-    /* background-color: aquamarine; */
     position: fixed;
     width: 20%;
     height: 100%;
@@ -34,16 +32,6 @@
     border-top: 1px solid #dbdbdb;
     border-right: 5px solid #f4c052;
 }
-/* .active a:after {
-    background-color: #f4c052;
-    display: block;
-    position: absolute;
-    content: ' ';
-    right: 0;
-    bottom: 0;
-    width: 3px;
-    height: 100%;
-} */
 .sidebar li {
     border-bottom: 1px solid #dbdbdb;
     padding: 20px;
